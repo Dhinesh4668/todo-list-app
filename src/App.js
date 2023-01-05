@@ -44,6 +44,23 @@ export default class App extends Component {
     })
   }
 
+  togleTodo =(todo)=> this.setState({
+    TodoItems: this.state.TodoItems.map(item=>item.action === todo.action ? {...item,Done: !item.Done}:item)
+  });
+  todoTablerows =()=>this.state.TodoItems.map(item =>
+    <tr key={item.action}>
+      <td>{item.action}</td>
+      <td>
+        <input type='checkbox' checked={item.Done}
+        onChange={()=>this.togleTodo(item)} />
+      </td>
+    </tr>
+    );
+
+
+
+
+
 
   render() {
     return (
@@ -66,8 +83,15 @@ export default class App extends Component {
             <button className="btn btn-secondary  mt-3" onClick={this.AddTak}>ADD</button>
           </div>
         </div>
-
-
+        {/* table */}
+        <table className="table table-striped table-bordered">
+          <head>
+            <tr><th>Description</th><th>Status</th></tr>
+            <tbody>
+              {this.todoTablerows}
+            </tbody>
+          </head>
+        </table>
 
       </div>
     );
