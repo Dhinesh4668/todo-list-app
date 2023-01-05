@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Dhinesh4668/todo-list-app/static/css/main.04faca9b.css",
+    "main.js": "/Dhinesh4668/todo-list-app/static/js/main.320fd5fa.js",
+    "index.html": "/Dhinesh4668/todo-list-app/index.html",
+    "main.04faca9b.css.map": "/Dhinesh4668/todo-list-app/static/css/main.04faca9b.css.map",
+    "main.320fd5fa.js.map": "/Dhinesh4668/todo-list-app/static/js/main.320fd5fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04faca9b.css",
+    "static/js/main.320fd5fa.js"
+  ]
+}
